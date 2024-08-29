@@ -1,7 +1,8 @@
+### Still need to change a lot. Has some bugs in the UI.
+
 # Skin Disease and Skincare Chatbot
 
 This project is a chatbot specialized in diagnosing skin diseases and addressing skincare issues. The chatbot is powered by a fine-tuned version of OpenBioLLM, an expert language model in the medical domain. The model has been fine-tuned specifically for skin problems and skincare by training it on curated data from the internet. Additionally, the chatbot features a vision component that can identify diseases in images using a fine-tuned version of the Peli-Gemma vision model, trained on 22,000 skin disease images. The chatbot also maintains chat history to keep conversations in context.
-
 ## Model Links
 
 - [Peli-Gemma Vision Model (fine-tuned for dermatology)](https://huggingface.co/brucewayne0459/paligemma_derm)
@@ -34,3 +35,8 @@ Upload the `static.zip` file to your Colab environment and run the following com
 !pip install pyngrok
 !ngrok config add-authtoken Your_ngrok_key
 !python main.py
+```
+
+Screen Shots:
+![Screenshot 2024-08-28 224605](https://github.com/user-attachments/assets/2b75c5c1-a47a-4f2c-b160-f7c552ca8b20)
+![Screenshot 2024-08-28 224446](https://github.com/user-attachments/assets/8a861bbe-2a69-41bc-bec1-8357f6b60f7f)
