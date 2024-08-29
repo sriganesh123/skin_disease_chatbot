@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with NeuralNet</title>
+    <link rel="stylesheet" href="./static/css/chatbot_styles.css">
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <div class="chatbot-container">
+        <h1>Chat with NeuralNet</h1>
+        <div id="chatbot-messages"></div>
+        <div id="chat-form">
+            <div id="image-preview-container" style="display: none;">
+                <img id="image-preview" src="" alt="Preview" />
+                <button id="remove-image">×</button>
+            </div>
+            <label for="image-upload" id="image-upload-label">Upload Image</label>
+            <input type="file" id="image-upload" accept="image/*">
+            <input type="text" id="user-input" placeholder="Type your message..." required>
+            <button id="send-button">Send</button>
+        </div>
+    </div>
+    <script src="./static/js/chatbot_script.js"></script>
+</body>
+</html>

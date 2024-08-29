@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SkinLlama - AI Dermatology Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='css/styles.css') }}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <h1>SkinLlama</h1>
+      <p>Your AI Dermatology Assistant</p>
+      <nav>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <h2>Accurately Identify Skin Conditions</h2>
+      <p>Before your first consultation, let SkinLlama analyze and guide you.</p>
+    <a href="{{ url_for('chat') }}" class="cta-button">Try SkinLlama Now</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Why SkinLlama?</h2>
+      <div class="feature-list">
+        <div class="feature">
+          <i class="fas fa-microscope"></i>
+          <h3>AI-Powered Analysis</h3>
+          <p>Accurate, real-time skin condition diagnosis.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-lock"></i>
+          <h3>Secure & Private</h3>
+          <p>Your data is safe and secure.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-clock"></i>
+          <h3>Real-Time Results</h3>
+          <p>Get instant analysis without long waits.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-user-md"></i>
+          <h3>Expert-Backed Insights</h3>
+          <p>Validated by dermatologists and experts.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="social-media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>&copy; 2024 SkinLlama. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </div>
+  </footer>
+  <script>
+    const BASE_URL = window.location.origin;
+    const STATIC_URL = "{{ url_for('static', path='') }}"; 
+     </script>
+  <!-- Custom JS -->
+  <script src="{{ url_for('static', path='js/script.js') }}"></script>
+  </body>
+</html>
